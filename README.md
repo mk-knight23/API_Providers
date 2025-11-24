@@ -83,6 +83,44 @@ npm run build
 npm start
 ```
 
+## Deployment
+
+### Quick Deploy to Vercel
+
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel --prod
+```
+
+Or use the deployment script:
+```bash
+./deploy.sh
+```
+
+### Deploy via GitHub
+
+1. Push to GitHub:
+```bash
+git remote add origin https://github.com/YOUR_USERNAME/ai-api-providers.git
+git push -u origin main
+```
+
+2. Import on [Vercel](https://vercel.com/new)
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.
+
+## Testing
+
+Run the test checklist:
+```bash
+npm run build  # Verify build succeeds
+```
+
+See [TESTING.md](TESTING.md) for comprehensive testing guide.
+
 ## Getting Started
 
 ### Prerequisites
